@@ -1,7 +1,9 @@
-import "./global.css";
+import "../global.css";
 import { View, Text } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+
+
 
 export default function App() {
   return (
@@ -11,6 +13,7 @@ export default function App() {
           <Text className="text-xl font-bold text-blue-500">Connect Router</Text>
           {/* <StatusBar style="hidden" /> */}
         </View>
+        
       </SafeAreaView>
     </SafeAreaProvider>
   );
