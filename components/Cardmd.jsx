@@ -1,11 +1,13 @@
-import { View } from 'react-native';
+import { View, Text } from 'react-native';
+import { Dimensions } from 'react-native';
+const screenHeight = Dimensions.get('window').height;
 
-const CardSm = () => {
+const Cardmd = () => {
     return (
-        <View className="border border-gray-200 min-h-[50%] min-w-[90%] my-4 ">
-
+        <View style={{ minHeight: screenHeight * 0.50 }} className="w-full  border my-4">
+            <Text></Text>
         </View>
     )
 }
 
-export default CardSm;
+export default Cardmd;

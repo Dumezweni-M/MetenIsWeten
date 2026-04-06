@@ -8,6 +8,7 @@ import Header from "../components/Header";
 import CardSm from "../components/Cardsm";
 import Cardmd from "../components/Cardmd";
 import Cardlg from "../components/Cardlg";
+import VerticalScroll from "../components/ScrollableVertical";
 
 
 
@@ -17,12 +18,14 @@ export default function App() {
         <View className="flex-1 items-center justify-center bg-white ">
           <Header/>
 
+          <VerticalScroll>
+            <View className="w-full h-auto pb-24">
+              <CardSm/>
+              <Cardmd/>
+              <Cardlg/>
+            </View>
+          </VerticalScroll>
           {/* Main content  */}
-          <View className="flex-1">
-            <CardSm/>
-            <Cardmd/>
-            <Cardlg/>
-          </View>
 
           
 
